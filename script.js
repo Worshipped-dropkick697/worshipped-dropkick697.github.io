@@ -1,20 +1,31 @@
-document.addEventListener("DOMContentLoaded", () => {
-    const copyButton = document.getElementById("copyButton");
+const iban =
+"TR350001000207775037335005";
 
-    if (copyButton) {
-        copyButton.addEventListener("click", async () => {
-            const iban = "TR35 0001 0002 0777 5037 3350 05";
+const copyBtn = document.getElementById("copyBtn");
+const copyMessage = document.getElementById("copyMessage");
 
-            try {
-                await navigator.clipboard.writeText(iban);
-                copyButton.textContent = "✔ IBAN Kopyalandı";
-            } catch (e) {
-                copyButton.textContent = "Kopyalama başarısız";
-            }
+copyBtn.addEventListener("click", async () => {
 
-            setTimeout(() => {
-                copyButton.textContent = "IBAN'I KOPYALA";
-            }, 2000);
-        });
+    try {
+
+        await navigator.clipboard.writeText(iban);
+
+        copyMessage.style.display = "block";
+
+        copyBtn.innerHTML = "✅ Kopyalandı";
+
+        setTimeout(() => {
+
+            copyMessage.style.display = "none";
+
+            copyBtn.innerHTML = "📋 IBAN'I KOPYALA";
+
+        },2000);
+
+    } catch (err) {
+
+        alert("IBAN kopyalanamadı.");
+
     }
+
 });
