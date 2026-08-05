@@ -1,0 +1,172 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,Helvetica,sans-serif;
+}
+
+body{
+
+    background:#0f0f0f;
+
+    color:white;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    min-height:100vh;
+
+}
+
+.container{
+
+    width:100%;
+
+    max-width:450px;
+
+    padding:25px;
+
+}
+
+.card{
+
+    background:#1b1b1b;
+
+    border-radius:20px;
+
+    padding:35px;
+
+    text-align:center;
+
+    box-shadow:0 0 25px rgba(255,255,255,.05);
+
+}
+
+.logo{
+
+    font-size:60px;
+
+    margin-bottom:15px;
+
+}
+
+h1{
+
+    font-size:30px;
+
+    margin-bottom:20px;
+
+}
+
+p{
+
+    color:#d9d9d9;
+
+    margin:8px 0;
+
+    line-height:28px;
+
+}
+
+.buttons{
+
+    display:flex;
+
+    gap:15px;
+
+    margin-top:30px;
+
+    margin-bottom:35px;
+
+}
+
+.buttons a{
+
+    flex:1;
+
+    text-decoration:none;
+
+    color:white;
+
+    background:#2b2b2b;
+
+    padding:15px;
+
+    border-radius:15px;
+
+    transition:.3s;
+
+    font-size:18px;
+
+}
+
+.buttons a:hover{
+
+    background:#3c3c3c;
+
+}
+
+.coffee{
+
+    background:#111;
+
+    border-radius:18px;
+
+    padding:25px;
+
+}
+
+.coffee h2{
+
+    margin-bottom:20px;
+
+}
+
+.iban{
+
+    font-size:18px;
+
+    font-weight:bold;
+
+    word-break:break-all;
+
+}
+
+.name{
+
+    margin-top:15px;
+
+    margin-bottom:20px;
+
+}
+
+button{
+
+    border:none;
+
+    background:#ffffff;
+
+    color:#111;
+
+    padding:15px 25px;
+
+    border-radius:12px;
+
+    cursor:pointer;
+
+    font-size:16px;
+
+    font-weight:bold;
+
+    transition:.3s;
+
+}
+
+button:hover{
+
+    transform:scale(1.05);
+
+}
