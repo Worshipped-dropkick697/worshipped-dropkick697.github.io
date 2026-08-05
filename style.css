@@ -176,3 +176,6 @@ button:hover{
         transform:translateY(0);
     }
 }
+#copyMessage{
+    display:none !important;
+}
