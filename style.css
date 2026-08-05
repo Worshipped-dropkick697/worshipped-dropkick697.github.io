@@ -6,19 +6,15 @@
 }
 
 body{
-
-    background:#0f0f0f;
-
-    color:white;
-
-    display:flex;
-
-    justify-content:center;
-
-    align-items:center;
-
+    margin:0;
+    padding:0;
     min-height:100vh;
-
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#0b0b0b,#181818,#101010);
+    color:#fff;
+    font-family:Arial,Helvetica,sans-serif;
 }
 
 .container{
@@ -32,17 +28,14 @@ body{
 }
 
 .card{
-
-    background:#1b1b1b;
-
-    border-radius:20px;
-
+    background:rgba(27,27,27,.82);
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:28px;
     padding:35px;
-
     text-align:center;
-
-    box-shadow:0 0 25px rgba(255,255,255,.05);
-
+    backdrop-filter:blur(16px);
+    -webkit-backdrop-filter:blur(16px);
+    box-shadow:0 25px 60px rgba(0,0,0,.45);
 }
 
 .logo{
