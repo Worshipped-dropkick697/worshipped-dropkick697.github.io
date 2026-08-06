@@ -207,3 +207,8 @@ button:hover{
 .buttons a:hover::before{
     left:100%;
 }
+.buttons a:active,
+button:active{
+    transform:scale(.96);
+    transition:.1s;
+}
