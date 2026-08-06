@@ -55,6 +55,9 @@ h1{
     line-height:1.15;
     margin-bottom:22px;
     letter-spacing:-1px;
+    opacity:0;
+    animation:titleFade .8s ease forwards;
+    animation-delay:.3s;
 }
 
 h1 span{
@@ -211,4 +214,16 @@ button:hover{
 button:active{
     transform:scale(.96);
     transition:.1s;
+}
+
+@keyframes titleFade{
+    from{
+        opacity:0;
+        transform:translateY(20px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
 }
